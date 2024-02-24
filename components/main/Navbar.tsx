@@ -37,6 +37,7 @@ const Navbar = () => {
         <div className="flex flex-row gap-5">
           {Socials.map((social, index) => (
             <Link
+              key={index}
               href={social.path}
               target="_blank"
               className="rounded-xl hover:bg-[#7042f861] "
